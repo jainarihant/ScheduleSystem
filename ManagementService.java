@@ -35,6 +35,7 @@ public class ManagementService {
                 meetings.put(meeting.getName(), meeting);
             } else {
                 System.out.println("Meeting time collides with meeting Name: "+ meetingsWithcollisonTime.get(0));
+                return false;
             }
         } else {
             System.out.println("Meeting with the above name already exists, please create a meeting with separate name");
